@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/fox-removebg-preview.png">
+    <title>Fox Elementary SACC</title>
+  </head>
+  <body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
+    <header>
+      <img src="images/fox-removebg-preview.png" alt="logo" id="logo">
+      <h1 class="header"><b>Fox Elementary School</b></h1>
+      <div>
+      <nav>
+        <ul class="nav_links">
+            <li class="nav_item"><a href="index.html">About</a></li>
+            <li class="nav_item"><a href="staff.html">Staff</a></li>
+            <li class="nav_item_current"><a href="registration.html">Registration</a></li>
+            <li class="nav_item"><a href="covid.html">COVID-19</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="about" id="skip" tabindex="0">
+      <h1> Register for SACC</h1>
+      <h2>Registration</h2>
+      <p>
+        SACC is available to students in Kindergarten through fifth grade, currently attending
+        Chippewa Valley Schools. Per district policy, ALL past due accounts MUST be paid in full to register for SACC and kept current to remain in the program. 
+        The Eleyo system allows for multiple owners on a single childcare account. Additional owners only be added by the SACC director. When more than one owner is attached to a
+        childcare account, each owner uses their unique email address and password to log in. Each
+        owner would not have access to the other owner's payment methods. All account owners do
+        see all invoices, contract/schedules, payments, and credits on the account. Owners can print
+        annual tax statements online by payer.
+      </p>
+
+    <img id="registration_image" src="images/image_4.jpg" alt="" />
+    <br>
+    <form action="https://formspree.io/f/mqkgbzbn" method="POST">
+      <fieldset>
+        <legend>Questions, Comments, Concerns? Contact us!</legend>
+        
+        <label for = "name_id">Your Name</label>
+        <input type="text" placeholder="Enter Your Name" name="name" id="name_id" required>
+    
+        <label for="email_id">Email</label> 
+        <input type="email" placeholder="Enter Your Email" name="email" id="email_id">
+    
+        <label for="tel_id">Your Phone Number</label>
+        <input type="tel" placeholder="123-456-7890" name="telephone" id="tel_id">
+        <div><span>Format: 123-456-7890</span></div>
+    
+        <label for="msg_id">Leave A Message</label>
+        <textarea placeholder="Enter your message" id = "msg_id" name="mesg" required></textarea><br>
+    
+        <input type="checkbox" checkbox="checked" id="check_id"> 
+        <label for ="check_id">Remember me</label>
+    
+        <input type="submit" value="Send!">
+    
+      </fieldset>
+     </form>
+
+
+
+
+  </main>
+
+    <footer>
+      <p>University of Michigan School of Information <br/>
+        &copy; Erika Kohl - SI 339 Web Design 2020</p>
+    </footer>
+  </body>
+</html>
