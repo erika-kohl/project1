@@ -411,16 +411,19 @@ nav div{
 #image1,#image5{
   grid-column:1;
   grid-row: 1;
+  height: 20vw;
 }
 
 #image2,#image6,#image4{
   grid-column:2;
   grid-row: 1;
+  height: 20vw;
 }
 
 #image3, #image7{
   grid-column:3;
   grid-row: 1;
+  height: 20vw;
 }
 
 #image4{
