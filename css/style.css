@@ -17,7 +17,7 @@ h1{
 
 h1.header{
   font-family: 'Chewy', cursive;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   line-height: 1.25;
   color: aliceblue;
@@ -39,7 +39,7 @@ h3{
   font-family: 'Nunito', sans-serif;
 }
 
-p,li,ul{
+p,li,ul,ol{
   padding: 10px 30px 10px 30px;
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
@@ -89,15 +89,18 @@ p.small_text{
 
 
 #logo{
-   width: 20%;
-   height: 20%;
+   width: 25%;
+   height: 25%;
    padding: 20px;
    display: flex;
    align-items: center;
 }
 
-/* Gallery! */
-.gallery{
+
+
+
+/* Images! */
+.pictures{
   min-height: 600px;
   display: flex;
   flex-wrap: wrap;
@@ -105,20 +108,18 @@ p.small_text{
   
 }
 
-.gallery > img{
+.pictures > img{
   border: 10px #da7c3e solid;
   margin: 10px;
-  width: 300px;
+  width: 60%;
+  
 }
 
-#image1,#image2,#image3, #image4,#image5, #image6, #image7, #image8, #image9{
-  height: 50%;
-  width: 50%;
+#image1,#image2,#image3, #image4,#image5, #image6, #image7{
+  height: 75%;
+  width: 75%;
   border-radius: 30px;
 }
-
-
-
 
 
 /* Navbar */
@@ -149,23 +150,25 @@ nav div{
   flex-direction: column;
   align-items: center;
   font-family: 'Nunito', sans-serif;
-  
+ 
  
 }
 
 .nav_item a{
-  font-size: 25px;
+  font-size: 145%;
   color: black;
   text-decoration: none;
   font-family: 'Nunito', sans-serif;
   padding: 10px;
+  flex-wrap: nowrap;
 }
 
 .nav_item_current a{
-  font-size: 25px;
+  font-size: 145%;
   color: #425f91;
   font-family: 'Nunito', sans-serif;
   padding: 10px;
+  flex-wrap: nowrap;
 }
 
 
@@ -179,18 +182,20 @@ nav div{
 }
 
 /* Staff Page */
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 769.99px){ 
 
 .staff_bio {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows:190px 100px 190px 100px 190px 100px;
+    grid-template-rows:190px 425px 190px 200px 190px 100px;
     grid-row-gap: 100px;
     grid-column-gap: auto;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
     grid-column: 1;
+    justify-items: center;
+    justify-content: center;
   }
 
   #staff_image_1{
@@ -203,6 +208,7 @@ nav div{
 
   #staff_bio_1{
     grid-row: 2;
+    height: auto;
   }
 
   #staff_image_2{
@@ -215,6 +221,7 @@ nav div{
 
   #staff_bio_2{
     height: 100px;
+    height: auto;
   
     grid-row: 4;
   }
@@ -303,7 +310,6 @@ nav div{
   }
   
   
-  
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (min-width: 770px) {
     form{
@@ -325,7 +331,6 @@ nav div{
       vertical-align:top;
    }
   }
-
 
 
   /* Desktop View!---------------------------------------------------------------------------------------------------------- */
@@ -350,42 +355,98 @@ nav div{
     font-family: 'Nunito', sans-serif;
   }
 
+
+  h1.header{
+    font-family: 'Chewy', cursive;
+    font-size: 3vw;
+    text-align: center;
+    line-height: 1.25;
+    color: aliceblue;
+  
+  }
+
   .nav_links{
-   
     display: flex;
     flex-direction: row;
     font-family: 'Nunito', sans-serif;
+    align-content: center;
   }
 
   .nav_item a{
-    padding: 10px;
+    margin: 0 auto;
+    font-size: 2vw;
     font-family: 'Nunito', sans-serif;
   }
 
+  .nav_item_current a{
+    margin: 0 auto;
+    font-size: 2vw;
+    color: #425f91;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    flex-wrap: nowrap;
+  }
 
-
-/*About Page*/
 
 .list{
   margin-left: 50px;
   margin-right: 50px;
 }
 
-#image1,#image2,#image3, #image4,#image5, #image6, #image7, #image8, #image9{
-  height: 300px;
-  width: 350px;
-}
+
+/* Images! */
+.pictures{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60%;
  
+  
+}
+
+.pictures > img{
+  border: 10px #da7c3e solid;
+  width: 60%;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}
+
+#image1,#image5{
+  grid-column:1;
+  grid-row: 1;
+}
+
+#image2,#image6,#image4{
+  grid-column:2;
+  grid-row: 1;
+}
+
+#image3, #image7{
+  grid-column:3;
+  grid-row: 1;
+}
+
+#image4{
+  grid-column:2;
+  grid-row: 1;
+  height: auto;
+}
+
+
+
 /*Staff Images*/
 .staff_bio {
   display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 20px 20px; 
-  grid-row-gap: 330px;
-  grid-column-gap: 150px;
+  grid-template-columns: 100px 800px;
+  grid-template-rows: 275px 275px 275px; 
+  grid-row-gap: 35px;
+  grid-column-gap: 175px;
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 10%;
+  align-items: center;
 }
 
 #staff_image_1{
@@ -399,7 +460,8 @@ nav div{
 
 #staff_bio_1{
   grid-column-start: 2;
-  grid-row: 1
+  height: auto;
+  grid-row: 1;
 }
 
 #staff_image_2{
@@ -414,6 +476,7 @@ nav div{
 #staff_bio_2{
   grid-column-start: 2;
   grid-row: 2;
+  height: auto;
 }
 
 #staff_image_3{
@@ -426,8 +489,10 @@ nav div{
 }
 
 #staff_bio_3{
+  align-items: center;
   grid-column-start: 2;
   grid-row: 3;
+  height: auto;
 }
 }
 
@@ -440,13 +505,4 @@ nav div{
   body{
     background-image: none;
   }
-
-  .gallery{
-    display: none;
-  }
-  
-  #gallery{
-    display: none;
-  }
-
 }
