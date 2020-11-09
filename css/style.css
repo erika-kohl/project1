@@ -290,11 +290,6 @@ nav div{
   }
   
   
-  input[type=checkbox]{
-      display:inline;
-      width:inherit;
-  }
-  
   input[type=submit] {
     background-color: #38803C;
     color: white;
