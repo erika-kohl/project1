@@ -6,6 +6,10 @@ body{
   background-color: aliceblue;
 }
 
+main{
+  height: relative;
+}
+
 h1{
   font-family: 'Nunito', sans-serif;
   font-size: 45px;
@@ -20,7 +24,7 @@ h1.header{
   font-size: 45px;
   text-align: center;
   line-height: 1.25;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -47,6 +51,7 @@ p,li,ul,ol{
 
 p.statement{
   padding: 10px 15px;
+  padding-bottom: 35px;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   text-align: center;
@@ -75,6 +80,7 @@ a.skip:focus{
 
 
 footer{
+  position: relative;
   background-color: #425f91;
   color: white;
   padding: 20px;
@@ -100,7 +106,8 @@ p.small_text{
 
 
 /* Images! */
-.pictures{
+.pictures, .index_pictures{
+  padding: 20px;
   min-height: 600px;
   display: flex;
   flex-wrap: wrap;
@@ -112,10 +119,16 @@ p.small_text{
   border: 10px #da7c3e solid;
   margin: 10px;
   width: 60%;
+}
+
+.index_pictures > img{
+  border: 10px #da7c3e solid;
+  margin-top: 10px;
+  width: 60%;
   
 }
 
-#image1,#image2,#image3, #image4,#image5, #image6, #image7{
+#image1,#image2,#image3, #image4,#image5, #image6, #image7, #image8, #image9, #image10, #image11, #image12, #image13{
   height: 75%;
   width: 75%;
   border-radius: 30px;
@@ -124,7 +137,7 @@ p.small_text{
 
 /* Navbar */
 header{
-  background: #90A8C3;
+  background: #425f91;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -156,7 +169,7 @@ nav div{
 
 .nav_item a{
   font-size: 145%;
-  color: black;
+  color:white;
   text-decoration: none;
   font-family: 'Nunito', sans-serif;
   padding: 10px;
@@ -165,7 +178,7 @@ nav div{
 
 .nav_item_current a{
   font-size: 145%;
-  color: #425f91;
+  color:  #f0a762;
   font-family: 'Nunito', sans-serif;
   padding: 10px;
   flex-wrap: nowrap;
@@ -173,7 +186,7 @@ nav div{
 
 
 .nav_item a:hover, a:focus{
-  color: #da7c3e;
+  color: #53e78c;
   font-weight: bold;
   text-decoration: underline;
   -webkit-text-decoration-style: solid;
@@ -182,7 +195,7 @@ nav div{
 }
 
 /* Staff Page */
-@media only screen and (max-width: 769.99px){ 
+/*@media only screen and (min-width: 770.01px){ */
 
 .staff_bio {
     display: grid;
@@ -241,7 +254,6 @@ nav div{
   grid-row: 6/ span 1;
 }
 
-}
 
 
 /* Registration Contact Form*/
@@ -376,7 +388,8 @@ nav div{
   .nav_item_current a{
     margin: 0 auto;
     font-size: 2vw;
-    color: #425f91;
+    font-style: bold;
+    color:  #f0a762;
     font-family: 'Nunito', sans-serif;
     padding: 10px;
     flex-wrap: nowrap;
@@ -394,33 +407,48 @@ nav div{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 60%;
- 
-  
+  position: relative;
+}
+
+.index_pictures{
+  padding-bottom: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  row-gap: 45px;
 }
 
 .pictures > img{
   border: 10px #da7c3e solid;
   width: 60%;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: 0px;
   margin-left: auto;
-  margin-right: auto;
-
-  
+  margin-right: auto;  
 }
 
-#image1,#image5{
+.index_pictures > img{
+  border: 10px #da7c3e solid;
+  width: 60%;
+  margin-top: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+/* Index Images*/ 
+#image1{
   grid-column:1;
   grid-row: 1;
   height: 20vw;
 }
 
-#image2,#image6{
+#image2{
   grid-column:2;
   grid-row: 1;
   height: 20vw;
 }
 
-#image3, #image7{
+#image3{
   grid-column:3;
   grid-row: 1;
   height: 20vw;
@@ -429,22 +457,81 @@ nav div{
 #image4{
   grid-column:2;
   grid-row: 1;
-  height: auto;
+  height: 20vw;
+}
+
+#image8{
+  grid-column:1;
+  grid-row: 2;
+  height: 20vw;
+}
+
+#image9{
+  grid-column:2;
+  grid-row: 2;
+  height: 20vw;
 }
 
 
+#image10{
+  grid-column:3;
+  grid-row: 2;
+  height: 20vw;
+}
+
+
+#image11{
+  grid-column:1;
+  grid-row: 3;
+  height: 20vw;
+}
+
+#image12{
+  grid-column:2;
+  grid-row: 3;
+  height: 20vw;
+}
+
+#image13{
+  grid-column:3;
+  grid-row: 3;
+  height: 20vw;
+}
+
+/*COVID Images */
+
+#image5{
+  grid-column:1;
+  grid-row: 1;
+  height: 20vw;
+}
+
+#image6{
+  grid-column:2;
+  grid-row: 1;
+  height: 20vw;
+  row-gap: 25px;
+}
+
+#image7{
+  grid-column:3;
+  grid-row: 1;
+  height: 20vw;
+  row-gap: 25px;
+}
 
 /*Staff Images*/
 .staff_bio {
+  padding-top: 20px;
   display: grid;
-  grid-template-columns: 100px 800px;
-  grid-template-rows: 275px 275px 275px; 
-  grid-row-gap: 35px;
-  grid-column-gap: 175px;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 10%;
-  align-items: center;
+  grid-template-columns: 33% 66%;
+  grid-template-rows: 33% 33% 33%; 
+  grid-row-gap: 10%;
+  grid-column-gap: 75px;
+  padding-left: 25%;
+  padding-right: 20%;
+  padding-bottom: 200px;
+  align-items: left;
 }
 
 #staff_image_1{
@@ -458,8 +545,11 @@ nav div{
 
 #staff_bio_1{
   grid-column-start: 2;
-  height: auto;
+  height: 100%;
+  width: 100%;
   grid-row: 1;
+  align-items: center;
+  justify-items: left;
 }
 
 #staff_image_2{
@@ -474,8 +564,11 @@ nav div{
 #staff_bio_2{
   grid-column-start: 2;
   grid-row: 2;
-  height: auto;
+  height: 100%;
+  width: 100%;
+
 }
+
 
 #staff_image_3{
   width: 250px;
@@ -490,7 +583,10 @@ nav div{
   align-items: center;
   grid-column-start: 2;
   grid-row: 3;
-  height: auto;
+  height: 100%;
+  width: 100%;
+  align-items: left;
+  justify-content: left;
 }
 }
 
