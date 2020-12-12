@@ -134,6 +134,12 @@ p.small_text{
   border-radius: 30px;
 }
 
+fieldset{
+  padding-top: 10px;
+}
+legend{
+  padding-top: 50px;
+}
 
 /* Navbar */
 header{
@@ -445,7 +451,8 @@ nav div{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 60%;
-  position: relative;
+  padding-top: 5%;
+  padding-bottom: 1%;
 }
 
 .index_pictures{
@@ -458,6 +465,7 @@ nav div{
 
 .pictures > img{
   border: 10px #da7c3e solid;
+  height: 60%;
   width: 60%;
   margin-top: auto;
   margin-bottom: 0px;
@@ -469,7 +477,7 @@ nav div{
   border: 10px #da7c3e solid;
   width: 60%;
   margin-top: auto;
-  margin-bottom: 0px;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;  
 }
@@ -542,6 +550,12 @@ nav div{
   grid-column:1;
   grid-row: 1;
   height: 20vw;
+  row-gap: 25px;
+  display:flex;
+  
+  align-items: center;
+  justify-content: center;
+
 }
 
 #image6{
@@ -549,6 +563,9 @@ nav div{
   grid-row: 1;
   height: 20vw;
   row-gap: 25px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #image7{
@@ -556,6 +573,9 @@ nav div{
   grid-row: 1;
   height: 20vw;
   row-gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Staff Images*/
